@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Raleway:wght@100&display=swap');
+
+
+header {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 5%;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    flex-grow: 1;
+    color: white;
+    padding-right: 20%;
+}
+
+#imagem-logo {
+    width: 8%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 4%;
+}
+
+main {
+    background-image: url("../img/principal.webp");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sessao-apresetacao {
+    width: 60%;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-image: url("../img/background-apresentacao.png");
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'Hurricane', cursive;
+    font-size: xx-large;
+}
+
+#apresentacao {
+    font-size: larger;
+    width: 80%;
+}
+
+#sessao-2 {
+    background-color: rgba(0, 0, 3, 0.267);
+    color: white;
+    width: 60%;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: 'Hurricane', cursive;
+    padding-top: 3%;
+}
+
+#cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 8%;
+    width: 90%;
+ 
+}
+
+.cards-div {
+    width: 90%;
+}
+
+.cards-item {
+    width: 40%;
+    height: 200px;
+    border: 1px, solid, black;
+    border-radius: 5%;
+    text-align: center;
+    padding-top: 20%;
+}
+
+#cards-div-1 {
+    background-image: url("../img/cards-3.webp");
+    background-size: cover;
+    border-radius: 5%;
+
+}
+
+#cards-item-1 {
+    background-color: rgba(0, 0, 0, 0.692);
+    border-radius: 5%;
+    width: 100%;
+
+}
+
+
+#cards-div-2 {
+    background-image: url("../img/cards-2.jpg");
+    background-size: cover;
+    border-radius: 5%;
+
+}
+
+#cards-item-2 {
+    background-color: rgba(0, 0, 0, 0.692);
+    border-radius: 5%;
+    width: 100%;
+
+}
+
+#cards-div-3 {
+    background-image: url("../img/cards-1.jpg");
+    background-size: cover;
+    border-radius: 5%;
+}
+
+
+#cards-item-3 {
+    background-color: rgba(0, 0, 0, 0.692);
+    border-radius: 5%;
+    width: 100%;
+
+}
+
+iframe {
+    padding-bottom: 15%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 10%;
+  gap: 20px;
+}
+
+.rodape-icon {
+    width: 3%;
+}
+
+@media (max-width: 1280px) {
+    
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 10px;
+    }
+
+    #imagem-logo {
+        width: 20%;
+        margin-left: 0%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 15px;
+        padding-right: 0%;
+        font-size: 1.5em;
+
+    }
+    
+    #sessao-apresetacao {
+        width: 80%;
+    }
+
+
+    #sessao-2 {
+        width: 80%;
+
+    }
+    
+    #cards {
+        flex-direction: column;
+     
+    }
+
+    .cards-div {
+        width: 90%;
+    }
+    
+    .cards-item {
+        padding-top: 10%;
+    }
+    
+    iframe {
+        padding-bottom: 15%;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 10px;
+    }
+
+    #imagem-logo {
+        width: 40%;
+        margin-left: 0%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 15px;
+        padding-right: 0%;
+        font-size: 1.5em;
+
+    }
+    
+    h1 {
+        font-size: x-large;
+    }
+
+    h2 {
+        font-size: larger;
+    }
+
+    #sessao-apresetacao {
+        width: 80%;
+        background-image: none;
+    }
+
+    #sessao-2 {
+        width: 95%;
+
+    }
+    
+    #cards {
+        flex-direction: column;
+     
+    }
+
+    .cards-div {
+        width: 90%;
+    }
+    
+    .cards-item {
+        padding-top: 50%;
+    }
+    
+    iframe {
+        padding-bottom: 15%;
+        width: 70%;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        width: 20%;
+    }
+}
+
